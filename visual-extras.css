@@ -1,0 +1,23 @@
+
+/* Infográficos, elementos visuais e emojis do curso */
+.course-illustration{margin:18px 0 22px;border:1px solid #d7e6ee;border-radius:16px;overflow:hidden;background:#f8fbfd;box-shadow:0 12px 29px rgba(16,53,76,.06)}
+.course-illustration img{display:block;width:100%;height:auto;object-fit:contain}
+.course-illustration figcaption{padding:10px 16px;border-top:1px solid #ddeaf0;color:#486075;font-size:13px;line-height:1.45}
+.course-hero-illustration{margin-top:20px}
+.course-visual-section{margin:22px 0;padding-top:7px}
+.course-visual-section h3{font-size:21px}
+.course-visual-section p{margin-top:4px;color:#486075}
+.visual-navigation{background:#edf8f7;border:1px solid #c4e4df;padding:17px;border-radius:14px;margin:24px 0}
+.visual-navigation h3{margin:0 0 12px}
+.visual-links{display:flex;gap:10px;flex-wrap:wrap}
+.visual-link{display:inline-block;background:white;border:1px solid #b6d8d8;border-radius:10px;padding:8px 12px;text-decoration:none;font-weight:720;font-size:14px}
+.visual-link:hover{background:#dff4f2}
+.visual-cta{border-radius:14px;padding:18px;background:linear-gradient(120deg,#eff8f7,#f6f9fc);border:1px solid #c9e4e2;margin:26px 0}
+.visual-cta strong{font-size:18px}.visual-cta p{margin:6px 0 14px}
+.stage-image{max-width:850px;margin-top:24px}
+.stage-image img{max-height:280px;width:100%;object-fit:contain}
+.visual-a11y-tip{border-top:1px solid #dce6ed;margin-top:16px;padding:12px 3px 0;font-size:12px;color:#486075;line-height:1.5}
+.panel:has(.course-visual-section){scroll-margin-top:15px}
+.course-visual-section{scroll-margin-top:18px}
+@media(max-width:600px){.stage-image img{max-height:none}.visual-link{width:100%}.course-visual-section h3{font-size:19px}}
+@media print{.visual-navigation,.visual-cta,.visual-a11y-tip{display:none}.stage-image img{max-height:185px}.course-illustration{box-shadow:none;break-inside:avoid}.course-visual-section{break-inside:avoid}}
