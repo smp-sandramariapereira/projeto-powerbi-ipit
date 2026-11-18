@@ -4,6 +4,12 @@
 
 Este repositório contém o plano de desenvolvimento pedagógico e fichas editáveis do curso, organizado segundo as oito etapas do **IPIT — Ideathon Pedagógico de Inovação Tecnológica**, metodologia de **Sandra Maria Pereira**.
 
+## Interface interativa para o professor
+
+Abra [**index.html**](index.html) para acessar o curso em uma página HTML com conteúdo técnico distribuído pelas oito etapas IPIT, formulários preenchíveis, checklists, avaliação e opções de exportar/importar respostas em JSON, gerar relatório Markdown e imprimir. Para usar localmente, baixe o arquivo HTML e abra-o no navegador. O preenchimento é armazenado no navegador utilizado; exporte JSON para backup.
+
+> **Publicação web:** para disponibilizar a página como site, configure GitHub Pages na branch `main`, pasta `/ (root)`, em Settings → Pages (se a opção estiver habilitada). O arquivo `index.html` já está na raiz.
+
 ## Comece aqui
 - [Plano de desenvolvimento completo](docs/plano-de-desenvolvimento.md)
 - [Ficha 01 — Descoberta](fichas/01-descoberta.md)
