@@ -25,13 +25,13 @@ const links=el('div','visual-links');
 [['🧭 8 etapas IPIT','etapas-ipit'],['📥 Fluxo técnico','fluxo-powerbi'],['🧩 Modelo estrela','modelo-estrela']].forEach(([name,target])=>{const a=el('a','visual-link',name);a.href='#'+target;a.addEventListener('click',e=>{e.preventDefault();document.getElementById(target)?.scrollIntoView({behavior:'smooth',block:'start'})});links.append(a)});navCard.append(links);
 const firstNotice=home.querySelector('.notice');if(firstNotice)firstNotice.after(navCard);else home.append(navCard);
 const pathway=richSection('🔎 Como funciona o percurso IPIT','Cada etapa termina com um entregável verificável, desde o problema investigado até a apresentação da solução.','assets/etapas-ipit.svg',altText.stages,'As oito etapas são o eixo metodológico; as horas somam 20.');
-pathway.id='etapas-ipit';home.append(pathway);
+pathway.id='etapas-ipit';home.querySelector('.actions')?.before(pathway);
 const flow=richSection('📥 O trabalho técnico no Power BI','O percurso IPIT orienta as decisões pedagógicas; no Power BI, o aluno importa, trata, relaciona, calcula e visualiza.','assets/fluxo-powerbi.svg',altText.flow,'Fluxo conceitual utilizado em todas as práticas do curso.');
-flow.id='fluxo-powerbi';home.append(flow);
+flow.id='fluxo-powerbi';home.querySelector('.actions')?.before(flow);
 const schema=richSection('🧩 Por que o modelo estrela importa?','As dimensões descrevem as vendas. Relacionamentos corretos permitem que os filtros cruzem as tabelas.','assets/modelo-estrela.svg',altText.schema,'Esquema didático simplificado: não representa uma captura de tela do Power BI.');
-schema.id='modelo-estrela';home.append(schema);
+schema.id='modelo-estrela';home.querySelector('.actions')?.before(schema);
 const quick=el('div','visual-cta');quick.append(el('strong','','🚀 Pronto para começar?'));quick.append(el('p','','O planejamento e as fichas já têm sugestões do professor. Comece pela Descoberta; os dados reais da turma serão preenchidos durante os encontros.'));
-const next=el('button','button primary','🔎 Abrir a etapa 1');next.type='button';next.addEventListener('click',()=>document.querySelector('.nav[data-section="s1"]')?.click());quick.append(next);home.append(quick);
+const next=el('button','button primary','🔎 Abrir a etapa 1');next.type='button';next.addEventListener('click',()=>document.querySelector('.nav[data-section="s1"]')?.click());quick.append(next);home.querySelector('.actions')?.before(quick);
 }
 const topics={
 s1:['🔎','Problema e usuário','assets/etapas-ipit.svg','A investigação antecede os indicadores.'],
