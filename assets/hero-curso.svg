@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img">
+<defs>
+<linearGradient id="a" x2="1" y2="1"><stop stop-color="#10243c"/><stop offset=".65" stop-color="#194e75"/><stop offset="1" stop-color="#0d7f84"/></linearGradient>
+<linearGradient id="b" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e5f3f8"/></linearGradient>
+</defs>
+<rect width="1200" height="360" rx="28" fill="url(#a)"/>
+<circle cx="1100" cy="30" r="185" fill="#ffffff" opacity=".06"/><circle cx="990" cy="340" r="225" fill="#ffffff" opacity=".05"/>
+<path d="M0 307 C250 269 330 350 600 301 S960 280 1200 333 V360 H0Z" fill="#4ac3b8" opacity=".17"/>
+<rect x="53" y="56" width="440" height="258" rx="18" fill="url(#b)"/>
+<rect x="72" y="76" width="402" height="30" rx="7" fill="#eaf2f7"/><circle cx="94" cy="91" r="5" fill="#dbae4a"/><circle cx="112" cy="91" r="5" fill="#1aa3a4"/><circle cx="130" cy="91" r="5" fill="#315e81"/>
+<rect x="75" y="123" width="117" height="54" rx="9" fill="#fff" stroke="#dce8ed"/>
+<rect x="205" y="123" width="117" height="54" rx="9" fill="#fff" stroke="#dce8ed"/>
+<rect x="335" y="123" width="117" height="54" rx="9" fill="#fff" stroke="#dce8ed"/>
+<g font-family="Arial, sans-serif" font-size="12" fill="#536b7d"><text x="88" y="141">Receita</text><text x="219" y="141">Unidades</text><text x="350" y="141">Clientes</text></g>
+<g font-family="Arial, sans-serif" font-weight="700" font-size="20" fill="#143553"><text x="88" y="165">R$ 548M</text><text x="219" y="165">2,11M</text><text x="350" y="165">18,5 mil</text></g>
+<rect x="76" y="191" width="240" height="101" rx="9" fill="#fff" stroke="#dce8ed"/>
+<path d="M96 263 L131 238 L164 245 L199 212 L235 226 L294 203" fill="none" stroke="#0b7f86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M96 263 L131 238 L164 245 L199 212 L235 226 L294 203 V280 H96Z" fill="#3bc7bc" opacity=".14"/>
+<rect x="331" y="191" width="121" height="101" rx="9" fill="#fff" stroke="#dce8ed"/>
+<g fill="#0b7f86"><rect x="344" y="257" width="13" height="22" rx="2"/><rect x="364" y="236" width="13" height="43" rx="2"/><rect x="384" y="244" width="13" height="35" rx="2"/><rect x="404" y="213" width="13" height="66" rx="2"/></g>
+<circle cx="449" cy="250" r="23" fill="none" stroke="#dcae43" stroke-width="10" stroke-dasharray="90 55"/>
+<text x="548" y="89" fill="#9fece6" font-size="17" font-family="Arial,sans-serif" font-weight="700">🎓  FORMAÇÃO PRÁTICA · 20 HORAS</text>
+<text x="548" y="147" fill="#fff" font-size="44" font-family="Arial,sans-serif" font-weight="800">Power BI + IPIT</text>
+<text x="548" y="186" fill="#f6c65d" font-size="23" font-family="Arial,sans-serif" font-weight="700">Dados com propósito</text>
+<text x="548" y="218" fill="#e4f1f7" font-size="18" font-family="Arial,sans-serif">Da investigação à decisão</text>
+<g font-family="Arial,sans-serif" font-size="16" font-weight="700">
+<rect x="547" y="249" width="161" height="43" rx="12" fill="#def3f1"/><text x="566" y="276" fill="#125a62">🔎  8 etapas IPIT</text>
+<rect x="720" y="249" width="184" height="43" rx="12" fill="#e9eef8"/><text x="739" y="276" fill="#183e63">📊  Dashboard</text>
+<rect x="916" y="249" width="197" height="43" rx="12" fill="#fff1cf"/><text x="933" y="276" fill="#825817">🎯  Projeto final</text>
+</g></svg>
