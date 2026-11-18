@@ -4,6 +4,18 @@
 
 Este repositório contém o plano de desenvolvimento pedagógico e fichas editáveis do curso, organizado segundo as oito etapas do **IPIT — Ideathon Pedagógico de Inovação Tecnológica**, metodologia de **Sandra Maria Pereira**.
 
+## Recursos visuais aplicados 🎨
+
+A página interativa apresenta **emojis didáticos, navegação ilustrada e quatro imagens SVG próprias**, feitas para explicar conceitos sem depender de serviços externos:
+- [Capa do curso](assets/hero-curso.svg) — dashboard e resultados de aprendizagem;
+- [Oito etapas IPIT](assets/etapas-ipit.svg) — descoberta até pitch;
+- [Fluxo técnico do Power BI](assets/fluxo-powerbi.svg) — importar, tratar, relacionar, calcular e visualizar;
+- [Modelo estrela](assets/modelo-estrela.svg) — fato Vendas, dimensões e cardinalidade.
+
+Os recursos são ativados por [visual-extras.js](visual-extras.js) e estilizados em [visual-extras.css](visual-extras.css), além dos estilos gerais em [design-system.css](design-system.css). **Para abrir offline**, mantenha a estrutura de pastas inteira (`index.html`, três arquivos JS/CSS e `assets/`). As respostas do professor seguem em armazenamento local do navegador, com backup JSON disponível.
+
+> O site no GitHub Pages precisa estar habilitado em **Settings → Pages**; a existência dos arquivos no repositório não garante que o endereço público esteja ativo.
+
 ## Identidade visual do curso
 
 O design system **Dados com propósito — da investigação à decisão** está aplicado à página do professor. Consulte o [guia de padrão de design](docs/padrao-de-design.md) e o arquivo [CSS](design-system.css). Para executar localmente, mantenha `index.html`, `design-system.css` e `professor-preenchido.js` na mesma pasta.
