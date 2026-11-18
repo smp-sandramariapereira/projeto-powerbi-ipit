@@ -4,6 +4,10 @@
 
 Este repositório contém o plano de desenvolvimento pedagógico e fichas editáveis do curso, organizado segundo as oito etapas do **IPIT — Ideathon Pedagógico de Inovação Tecnológica**, metodologia de **Sandra Maria Pereira**.
 
+## Identidade visual do curso
+
+O design system **Dados com propósito — da investigação à decisão** está aplicado à página do professor. Consulte o [guia de padrão de design](docs/padrao-de-design.md) e o arquivo [CSS](design-system.css). Para executar localmente, mantenha `index.html`, `design-system.css` e `professor-preenchido.js` na mesma pasta.
+
 ## Estado do material: pronto para aplicação
 
 A página [**index.html**](index.html) inclui um [arquivo de configuração docente](professor-preenchido.js) com **conteúdo e planejamento padrão já preenchidos**, roteiros de aula com divisão de tempo para as oito etapas IPIT, perguntas disparadoras, respostas-modelo, intervenções e exemplos de entregáveis. O professor ajusta a identificação da escola, turma, datas e evidências reais. Os níveis de avaliação e os resultados observados permanecem em branco até a aplicação.
