@@ -4,6 +4,12 @@
 
 Este repositório contém o plano de desenvolvimento pedagógico e fichas editáveis do curso, organizado segundo as oito etapas do **IPIT — Ideathon Pedagógico de Inovação Tecnológica**, metodologia de **Sandra Maria Pereira**.
 
+## Estado do material: pronto para aplicação
+
+A página [**index.html**](index.html) inclui um [arquivo de configuração docente](professor-preenchido.js) com **conteúdo e planejamento padrão já preenchidos**, roteiros de aula com divisão de tempo para as oito etapas IPIT, perguntas disparadoras, respostas-modelo, intervenções e exemplos de entregáveis. O professor ajusta a identificação da escola, turma, datas e evidências reais. Os níveis de avaliação e os resultados observados permanecem em branco até a aplicação.
+
+**Uso local:** mantenha `index.html` e `professor-preenchido.js` na mesma pasta ao baixar, pois a página carrega o arquivo JavaScript. **GitHub Pages:** a publicação como site depende de ativar Settings → Pages na branch `main` e pasta `/ (root)`.
+
 ## Interface interativa para o professor
 
 Abra [**index.html**](index.html) para acessar o curso em uma página HTML com conteúdo técnico distribuído pelas oito etapas IPIT, formulários preenchíveis, checklists, avaliação e opções de exportar/importar respostas em JSON, gerar relatório Markdown e imprimir. Para usar localmente, baixe o arquivo HTML e abra-o no navegador. O preenchimento é armazenado no navegador utilizado; exporte JSON para backup.
