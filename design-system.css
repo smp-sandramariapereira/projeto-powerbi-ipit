@@ -1,0 +1,82 @@
+/* Power BI + IPIT — Design System v1.0
+ * Diretriz: clareza didática, contraste, consistência e foco no trabalho do professor.
+ * Este arquivo acrescenta uma camada visual à estrutura HTML sem alterar o armazenamento local.
+ */
+:root{
+ --brand-950:#10243c;--brand-900:#163653;--brand-700:#20577f;--brand-600:#246a98;
+ --accent-600:#0b7f86;--accent-100:#dff4f2;
+ --gold-600:#b77410;--gold-100:#fff0cc;
+ --success-700:#176a52;--success-100:#e2f5e9;
+ --danger-700:#9e333b;--danger-100:#fff0f0;
+ --gray-950:#15293b;--gray-700:#486075;--gray-500:#61768a;
+ --gray-300:#d5e0ea;--gray-200:#e6edf3;--gray-100:#f2f6f9;
+ --white:#ffffff;
+ --ink:var(--gray-950);--navy:var(--brand-900);--blue:var(--brand-700);
+ --cyan:var(--accent-600);--bg:var(--gray-100);--muted:var(--gray-700);
+ --line:var(--gray-300);--green:var(--success-700);--surface:var(--white);
+ --radius-sm:8px;--radius-md:12px;--radius-lg:18px;
+ --shadow-panel:0 18px 54px rgba(18,52,78,.06);
+ --focus-ring:0 0 0 3px rgba(11,127,134,.23);
+ --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;
+ --space-5:20px;--space-6:24px;--space-8:32px;
+}
+html{scroll-behavior:smooth}
+body{background:linear-gradient(180deg,#eaf1f6 0,var(--gray-100) 300px);letter-spacing:-.004em;font-size:15px;line-height:1.58}
+header{position:relative;overflow:hidden;background:linear-gradient(115deg,#10243c 0%,#1c4c72 65%,#156f7b 100%);border-bottom:5px solid #daae51;padding-top:44px;padding-bottom:42px}
+header::after{content:"";position:absolute;width:480px;height:480px;border:1px solid rgba(255,255,255,.14);border-radius:50%;right:-160px;top:-240px;pointer-events:none;box-shadow:0 0 0 85px rgba(255,255,255,.025),0 0 0 170px rgba(255,255,255,.015)}
+header h1{font-weight:800;max-width:850px;letter-spacing:-.036em;margin:8px 0 13px}
+header p{font-size:16px;max-width:820px;margin:0;color:#dbeaf3}
+header .eyebrow{color:#aee9e2;letter-spacing:.16em}
+.shell{grid-template-columns:252px minmax(0,1fr);max-width:1340px;gap:24px;padding:28px 22px 48px}
+.sidebar{border-radius:var(--radius-lg);box-shadow:var(--shadow-panel);padding:18px;top:20px}
+.sidebar h2{margin:0 0 14px;color:var(--gray-700);font-size:12px}
+.sidebar nav{display:grid;gap:3px}
+.nav{position:relative;border:1px solid transparent;border-radius:10px;padding:9px 12px;transition:background .16s,color .16s,border-color .16s}
+.nav:hover{background:#f0f6fa;color:var(--brand-900)}
+.nav.active{background:#e5f1f5;border-color:#c1d9e3;color:#164a66}
+.nav.active::before{content:"";position:absolute;left:-1px;top:12px;bottom:12px;width:3px;border-radius:0 4px 4px 0;background:var(--accent-600)}
+.sidebar .subtle{line-height:1.5}
+.toolbar{background:rgba(255,255,255,.73);border:1px solid var(--line);padding:12px;border-radius:var(--radius-md);margin-bottom:18px;box-shadow:0 8px 28px rgba(15,53,76,.035)}
+.button{border-color:#c3d2de;border-radius:9px;padding:10px 13px;background:#fff;transition:background .16s,border-color .16s,transform .16s}
+.button:hover:not(:disabled){background:#eaf4f7;border-color:#94b7c7;transform:translateY(-1px)}
+.button.primary{background:var(--brand-900);border-color:var(--brand-900);color:#fff}
+.button.primary:hover:not(:disabled){background:#245d79}
+.button.danger{color:var(--danger-700);border-color:#e5c4c7}
+.button:disabled{opacity:.5;cursor:not-allowed}
+.panel{border-color:#d9e4ec;border-radius:var(--radius-lg);box-shadow:var(--shadow-panel);padding:clamp(20px,3vw,36px)}
+.panel h2{font-size:clamp(24px,2.5vw,31px);font-weight:790;letter-spacing:-.032em}
+.panel h3{font-weight:740;color:var(--brand-900);letter-spacing:-.012em}
+.labeltop{color:var(--accent-600);letter-spacing:.1em}
+.metric{background:linear-gradient(155deg,#f1f8fa,#f8fafc);border-radius:var(--radius-md);min-height:92px}
+.metric strong{color:var(--brand-900);letter-spacing:-.045em;font-size:31px}
+.metric span{letter-spacing:.02em}
+.notice{background:#eaf8f6;border-color:var(--accent-600);padding:15px 18px;border-radius:4px 11px 11px 4px}
+.notice.warning{background:#fff8e9;border-color:var(--gold-600)}
+.sheet{background:#fbfdff;border:1px solid var(--line);border-radius:var(--radius-md);padding:20px;margin:25px 0 0}
+.sheet h3:first-child{margin-top:0}
+.sheet .help{margin-top:2px}
+table{font-size:14px}
+th{background:#eaf2f7;font-weight:730;color:var(--brand-900)}
+th,td{padding:11px 12px}
+tr:nth-child(even) td{background:#fafcfe}
+details{background:#fbfdff;border-color:#d9e4eb;padding:12px 15px}
+details[open]{background:#fff}
+details summary{font-weight:700}
+details p{margin-bottom:3px}
+.field label{color:#213e53;font-weight:680}
+.field input,.field textarea,.field select{border:1px solid #adbfce;border-radius:9px;padding:11px 12px;background:#fff;transition:border-color .15s,box-shadow .15s}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent-600);outline:0;box-shadow:var(--focus-ring)}
+.field textarea{min-height:108px}
+.checks label{background:white;border-radius:10px;border-color:var(--line);padding:11px 12px;transition:background .15s}
+.checks label:hover{background:#edf6f8}
+.checks input{width:16px;height:16px;accent-color:var(--success-700)}
+.actions{padding-top:20px}
+a{text-underline-offset:3px}
+a:hover{color:var(--accent-600)}
+button:focus-visible,.nav:focus-visible{outline:3px solid #37b9bd;outline-offset:2px}
+#status{font-size:12px}
+pre{background:var(--brand-950);color:#e8eff7;border:1px solid #315572;line-height:1.6}
+@media(max-width:950px){.shell{grid-template-columns:1fr;padding:14px}.sidebar{position:static}.sidebar nav{display:flex;gap:4px;overflow-x:auto;padding-bottom:4px}.nav{width:auto;white-space:nowrap}.nav.active::before{left:8px;top:auto;bottom:0;width:calc(100% - 16px);height:3px}.panel{padding:22px}}
+@media(max-width:600px){header{padding:27px 18px 30px}header p{font-size:14px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.sheet{padding:14px}.toolbar{padding:10px}.button{font-size:13px;padding:9px 10px}.fields,.checks{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+@media print{body{background:#fff}header{border:0;background:#fff;color:var(--ink)}header h1{color:var(--ink)}header p{color:#333}header::after{display:none}.panel{border:0;box-shadow:none;padding:12px 0}.notice,.sheet,details{background:white}.sidebar,.toolbar{display:none!important}.metric{min-height:60px;background:#fff}th{background:#eee}.nav.active::before{display:none}}
