@@ -157,4 +157,5 @@ document.getElementById('print').onclick=()=>window.print();document.getElementB
 render();document.querySelectorAll('.checks input[type=checkbox]').forEach(cb=>{const label=cb.closest('label');const panel=cb.closest('.panel');const idx=[...label.parentElement.children].indexOf(label);const id=panel.id.replace('page-','')+'__check'+idx;cb.dataset.key=id;cb.checked=!!state[id]});
 })();
 </script>
+<script src="professor-preenchido.js"></script>
 </body></html>
